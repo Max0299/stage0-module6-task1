@@ -12,12 +12,12 @@ public class Animal {
         this.hasFur = hasFur;
     }
 
-    public void  getDescription(){
+    public String  getDescription(){
 
         if(hasFur){
-            System.out.println("This animal is mostly " + color + ". It has " + numberOfPaws + " paws and a fur.");
+            return("This animal is mostly " + color + ". It has " + numberOfPaws + " paws and a fur.");
         }else {
-            System.out.println("This animal is mostly " + color + ". It has " + numberOfPaws + " paws and no fur.");
+            return("This animal is mostly " + color + ". It has " + numberOfPaws + " paws and no fur.");
         }
     }
 }
